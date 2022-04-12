@@ -29,9 +29,6 @@ if (args.help || args.h){
     process.exit(0)
 }
 
-//args.log = false;
-//args.debug = true;
-
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 
