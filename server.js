@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const args = minimist(process.argv.slice(2))
-const db = require("./db.js")
+const db = require("./database.js")
 const fs = require('fs')
 
 args["port"]
@@ -41,8 +41,8 @@ const server = app.listen(HTTP_PORT, () => {
 })
 
 if (args.log){
-    const writestream = fs.createWriteStream('access.log', {flags: 'a'})
-    app.use(morgan('accesslog', {stream: writestream}))
+    const WRITESTREAM = fs.createWriteStream('access.log', {flags: 'a'})
+    app.use(morgan('accesslog', {stream: WRITESTREAM }))
 }
 
 app.use( (req,res,next) => {
