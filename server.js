@@ -1,4 +1,5 @@
 const express = require('express')
+const minimist = require('minimist')
 const app = express()
 const args = minimist(process.argv.slice(2))
 const db = require("./database.js")

@@ -17,7 +17,7 @@
     "url": "https://github.com/comp426-2022-spring/a04-rceglie/issues"
   },
   "homepage": "https://github.com/comp426-2022-spring/a04-rceglie#readme",
-  "dependencies":{
+  "dependencies": {
     "better-sqlite3": "^7.5.1",
     "express": "^4.17.3",
     "minimist": "^1.2.6",
